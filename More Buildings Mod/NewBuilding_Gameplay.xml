@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+  <Types>
+	  <!-- City Centre -->
+
+	  <!-- Holy Site -->
+	  <Row Type="BUILDING_RELIGIOUS_GUILD" Kind="KIND_BUILDING" />
+	  
+	  <!-- Campus -->
+	  <Row Type="BUILDING_SCHOOL" Kind="KIND_BUILDING" />
+	  
+	  <!-- Theatre Square -->
+
+	  <!-- Commercial Hub -->
+	  <Row Type="BUILDING_BLACK_MARKET" Kind="KIND_BUILDING" />
+	  
+	  <!-- Industrial Zone -->
+	  <Row Type="BUILDING_NUCLEAR_POWER_PLANT" Kind="KIND_BUILDING" />
+
+  </Types>
+	
+  <Buildings>
+	  <!-- City Centre -->
+
+	  <!-- Holy Site -->
+	  <Row
+	   BuildingType="BUILDING_RELIGIOUS_GUILD"
+	   Name="LOC_BUILDING_RELIGIOUS_GUILD_NAME"
+	   PrereqDistrict="DISTRICT_HOLY_SITE"
+	   PurchaseYield="YIELD_GOLD"
+	   Cost="265" Maintenance="2" CitizenSlots="1"
+	   AdvisorType="ADVISOR_RELIGIOUS"/>
+	  
+	  <!-- Campus -->
+	  <Row 
+	   BuildingType="BUILDING_SCHOOL" 
+	   Name="LOC_BUILDING_SCHOOL_NAME"
+	   PrereqTech="TECH_EDUCATION"
+	   PrereqDistrict="DISTRICT_CAMPUS" 
+	   PurchaseYield="YIELD_GOLD" 
+	   Cost="145" Maintenance="2" CitizenSlots="1"
+	   AdvisorType="ADVISOR_TECHNOLOGY"/>
+
+	  <!-- Theatre Square -->
+
+	  <!-- Commercial Hub -->
+	  <Row
+	   BuildingType="BUILDING_BLACK_MARKET"
+	   Name="LOC_BUILDING_BLACK_MARKET_NAME"
+	   PrereqTech="TECH_CURRENCY"
+	   PrereqDistrict="DISTRICT_COMMERCIAL_HUB"
+	   PurchaseYield="YIELD_GOLD"
+	   Cost="200" Maintenance="0" CitizenSlots="1"
+	   AdvisorType="ADVISOR_TECHNOLOGY"/>
+	  
+	  <!-- Industrial Zone -->
+	  <Row
+	   BuildingType="BUILDING_NUCLEAR_POWER_PLANT"
+	   Name="LOC_BUILDING_NUCLEAR_POWER_PLANT_NAME"
+	   PrereqTech="TECH_NUCLEAR_FISSION"
+	   PrereqDistrict="DISTRICT_INDUSTRIAL_ZONE"
+	   PurchaseYield="YIELD_GOLD"
+	   Cost="600" Maintenance="4" CitizenSlots="1" RegionalRange="6"
+	   AdvisorType="ADVISOR_TECHNOLOGY"/>
+	  
+  </Buildings>
+
+  <BuildingPrereqs>
+	  <!-- City Centre -->
+
+	  <!-- Holy Site -->
+	  <Row Building="BUILDING_RELIGIOUS_GUILD" PrereqBuilding="BUILDING_SHRINE"/>
+	  
+	  <!-- Campus -->
+	  <Row Building="BUILDING_SCHOOL" PrereqBuilding="BUILDING_LIBRARY"/>
+	  
+	  <!-- Theatre Square -->
+
+	  <!-- Commercial Hub -->
+	  <Row Building="BUILDING_BLACK_MARKET" PrereqBuilding="BUILDING_MARKET"/>
+	  
+	  <!-- Industrial Zone --> 
+	  <Row Building="BUILDING_NUCLEAR_POWER_PLANT" PrereqBuilding="BUILDING_POWER_PLANT"/>
+	  <Row Building="BUILDING_NUCLEAR_POWER_PLANT" PrereqBuilding="BUILDING_ELECTRONICS_FACTORY"/>
+	  
+  </BuildingPrereqs>
+	
+  <Building_YieldChanges>
+	  <!-- City Centre -->
+
+	  <!-- Holy Site -->
+	  <Row BuildingType="BUILDING_RELIGIOUS_GUILD" YieldType="YIELD_FAITH" YieldChange="3"/>
+	  
+	  <!-- Campus -->
+	  <Row BuildingType="BUILDING_SCHOOL" YieldType="YIELD_SCIENCE" YieldChange="3"/>
+	  
+	  <!-- Theatre Square -->
+
+	  <!-- Commercial Hub -->
+	  <Row BuildingType="BUILDING_BLACK_MARKET" YieldType="YIELD_GOLD" YieldChange="4"/>
+	  
+	  <!-- Industrial Zone -->
+	  <Row BuildingType="BUILDING_NUCLEAR_POWER_PLANT" YieldType="YIELD_PRODUCTION" YieldChange="5"/>
+
+  </Building_YieldChanges>
+	
+  <Building_GreatPersonPoints>
+	  <!-- City Centre -->
+
+	  <!-- Holy Site -->
+	  <Row BuildingType="BUILDING_RELIGIOUS_GUILD" GreatPersonClassType="GREAT_PERSON_CLASS_PROPHET" PointsPerTurn="1"/>
+	  
+	  <!-- Campus -->
+	  <Row BuildingType="BUILDING_SCHOOL" GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST" PointsPerTurn="1"/>
+	  
+	  <!-- Theatre Square -->
+
+	  <!-- Commercial Hub -->
+	  <Row BuildingType="BUILDING_BLACK_MARKET" GreatPersonClassType="GREAT_PERSON_CLASS_MERCHANT" PointsPerTurn="1"/>
+
+	  <!-- Industrial Zone -->
+	  <Row BuildingType="BUILDING_NUCLEAR_POWER_PLANT" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="1"/>
+	  
+  </Building_GreatPersonPoints>
+</GameData>
