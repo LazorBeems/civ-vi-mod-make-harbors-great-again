@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+  <Types>
+
+	  <!-- Harbor - Existing-->
+	  <Row Type="BUILDING_LIGHTHOUSE" Kind="KIND_BUILDING"/>
+
+  </Types>
+	
+  <Buildings>
+
+	  <!-- Harbor - Existing -->
+	  <Row BuildingType="BUILDING_LIGHTHOUSE" Name="LOC_BUILDING_LIGHTHOUSE_NAME" Description="LOC_BUILDING_LIGHTHOUSE_DESCRIPTION" PrereqTech="TECH_SHIPBUILDING" PrereqDistrict="DISTRICT_HARBOR" PurchaseYield="YIELD_GOLD" Cost="105" AdvisorType="ADVISOR_GENERIC" Housing="2" CitizenSlots="1"/>
+	  
+  </Buildings>
+	
+  <Building_YieldChanges>
+	  <!-- Harbor - Existing -->
+	  <Row BuildingType="BUILDING_LIGHTHOUSE" YieldType="YIELD_FOOD" YieldChange="2"/>
+	  <Row BuildingType="BUILDING_LIGHTHOUSE" YieldType="YIELD_GOLD" YieldChange="2"/>
+
+  </Building_YieldChanges>
+
+</GameData>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="4f2630ec-830c-4991-b559-b4c280116b8c" version="1">
+  <Properties>
+    <Name>Make Harbors Great Again</Name>
+    <Description>This is a mod that will focus on buffing Harbors post trade route exclusitivity with Commercial Hubs.</Description>
+    <Teaser>This is a mod that will focus on buffing Harbors post trade route exclusitivity with Commercial Hubs.</Teaser>
+  </Properties>
+  <InGameActions>
+    <UpdateDatabase id="Gameplay">
+      <File>HarborsGreat_Gameplay.xml</File>
+    </UpdateDatabase>
+  </InGameActions>
+  <Files>
+    <File>HarborsGreat_Gameplay.xml</File>
+  </Files>
+</Mod>
